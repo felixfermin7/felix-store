@@ -1,0 +1,7 @@
+<h3 appHighlight>I am a component product</h3>
+{{ product.title | uppercase}}
+<img [src]= product.image>
+<strong>{{ product.price | currency }}</strong>
+<p>{{ product.description | slice:0:10 }}</p>
+<p>{{ today | date:'HH:mm:ss' }}</p>
+<button (click)="addCart()">Add to cart</button>
